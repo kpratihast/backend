@@ -1,0 +1,21 @@
+{
+  "name": "learn",
+  "version": "1.0.0",
+  "description": "learning swagger",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "dev": "swagger project edit -s -p 3001 --host 0.0.0.0 && nodemon",
+    "test": "nodemon nyc -a mocha 'test/api/**/*.js'"
+  },
+  "author": "Kshitij",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-winston": "^3.3.0",
+    "passport": "^0.4.0",
+    "swagger-express-mw": "^0.7.0",
+    "swagger-ui-express": "^4.0.7",
+    "winston": "^3.2.1"
+  }
+}
